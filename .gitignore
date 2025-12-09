@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Mac
+.DS_Store
+
+# Databases
+*.db
+*.sqlite3
+
+# Logs
+*.log
