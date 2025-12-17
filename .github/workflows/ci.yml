@@ -32,10 +32,13 @@ jobs:
         - name: tests
           run: .venv/bin/activate tests.py
 
-        - name: Print Folder Tree
+        - name: tree
+          needs: environnement virtuel Python
           uses: jaywcjlove/github-action-folder-tree@main
+          id: tree
           with:
             path: ./bin
+          run: echo "${{ steps.tree.outputs.tree }}"
         # - name: Linting
         #   run: .venv/bin/flake8.exe .
 
