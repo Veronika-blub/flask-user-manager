@@ -32,3 +32,6 @@ jobs:
         - name: tests
           run: .venv/bin/activate tests.py
 
+        - name: Linting
+          run: .venv/bin/flake8 .
+
