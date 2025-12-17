@@ -23,6 +23,9 @@ jobs:
         - name: activation 
           run: source .venv/bin/activate
 
+        - name: dependancies
+          run: pip install -r requirements.txt
+
         - name: var d'environnement
           run: export FLASK_APP=app/main.py
 
