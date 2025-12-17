@@ -20,3 +20,6 @@ jobs:
         - name: environnement virtuel Python
           run: python -m venv .venv
 
+        - name: activation 
+          run: source .venv/Scripts/activate
+
