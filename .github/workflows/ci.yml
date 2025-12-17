@@ -30,9 +30,15 @@ jobs:
           run: export FLASK_APP=app/main.py
 
         - name: tests
-          run: .venv/bin/activate tests.py
+          run: |
+            mkdir -p reports
+            activate tests.py > reports/tests.log
 
-
+        - name: Upload artefacts
+          uses: actions/upload-artifact@v4
+          with:
+            path: reports/
+                  
         - name: Linting
           run: flake8 .
 
