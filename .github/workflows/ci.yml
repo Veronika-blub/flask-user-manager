@@ -23,3 +23,6 @@ jobs:
         - name: activation 
           run: source .venv/bin/activate
 
+        - name: var d'environnement
+          run: export FLASK_APP=app/main.py
+
