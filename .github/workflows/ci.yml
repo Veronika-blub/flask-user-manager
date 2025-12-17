@@ -32,7 +32,7 @@ jobs:
         - name: tests
           run: |
             mkdir -p reports
-            tests.py > reports/tests.log
+            python tests.py > reports/tests.log
 
         - name: Upload artefacts
           uses: actions/upload-artifact@v4
