@@ -26,3 +26,6 @@ jobs:
         - name: var d'environnement
           run: export FLASK_APP=app/main.py
 
+        - name: tests
+          run: .venv/bin/activate tests.py
+
